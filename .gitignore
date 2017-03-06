@@ -5,11 +5,11 @@ node_modules
 aurelia_project
 src
 test
-.edtorconfig
+.editorconfig
 karma.conf.js
 materialize-css.js
 package.json
 rbuild.js
 README.md
 tsconfig.json
-tsline.json
+tslint.json
