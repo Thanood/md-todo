@@ -1,3 +1,4 @@
 {
-  "app-title": "Aurelia MD-Todo"
+  "app-title": "Aurelia MD-Todo",
+  "todo.add": "add a todo"
 }
