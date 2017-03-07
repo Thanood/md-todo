@@ -1,6 +1,7 @@
 # md-todo
 
 This is a demo todo-app using [Aurelia](http://aurelia.io) and [Aurelia Materialize bridge](https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge).
+It's a test application to ensure Materialize bridge works with the latest Mterialize anc CLI versions.
 
 Current features include:
 - Aurelia i18n used with Materialize components
