@@ -7,6 +7,9 @@
     "url": "???"
   },
   "license": "MIT",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/r.js -o rbuild.js"
+  },
   "dependencies": {
     "aurelia-animator-css": "^1.0.1",
     "aurelia-bootstrapper": "^2.1.0",
