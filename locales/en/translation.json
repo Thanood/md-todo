@@ -7,6 +7,12 @@
   },
   "todo": {
     "add": "Add a todo",
+    "modal": {
+      "add": "add",
+      "close": "close",
+      "inputLabel": "put some text here",
+      "keepOpen": "keep open"
+    },
     "placeholder": "Add a todo by clicking the '+' in the lower right corner."
   }
 }
