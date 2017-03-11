@@ -1,6 +1,6 @@
 import { autoinject } from "aurelia-framework";
 import { RouterConfiguration, Router } from "aurelia-router";
-import {I18N} from 'aurelia-i18n';
+import { I18N } from 'aurelia-i18n';
 
 @autoinject()
 export class App {
