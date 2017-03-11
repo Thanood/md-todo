@@ -3,7 +3,7 @@
     "title": "Aurelia MD-Todo"
   },
   "todo": {
-    "add": "add a todo",
+    "add": "Add a todo",
     "placeholder": "Add a todo by clicking the '+' in the lower right corner."
   }
 }
