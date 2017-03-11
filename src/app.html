@@ -19,7 +19,7 @@
     </a>
   </div>
 
-  <div md-modal md-modal.ref="addTodoModal">
+  <!--<div md-modal md-modal.ref="addTodoModal">
     <div class="modal-content">
       <h4>Add a todo</h4>
       <form submit.delegate="saveTodo()">
@@ -35,5 +35,6 @@
       <a click.delegate="saveTodo()" md-button="flat: true;" md-waves="color: primary;" class="modal-action primary-text">Add</a>
       <a md-button="flat: true;" md-waves="color: primary;" class="modal-action modal-close">Cancel</a>
     </div>
-  </div>
+  </div>-->
+  <add-todo-modal todo-added.delegate="saveTodo($event.detail)" view-model.ref="addTodoModal"></add-todo-modal>
 </template>

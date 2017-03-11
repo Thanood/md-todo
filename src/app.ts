@@ -1,26 +1,16 @@
-class Todo {
-  done: boolean;
-  title: string;
-}
+import { AddTodoModal } from "./resources/elements/modals/add-todo-modal";
+import { Todo } from "./models/todo";
 
 export class App {
-  addTodoModal: any;
-  keepModalOpen = false;
-  message = 'Hello World!';
-  newTodo = {
-    title: ''
-  }
+  addTodoModal: AddTodoModal;
   todos: Todo[] = [];
 
   addTodo() {
     this.addTodoModal.open();
   }
 
-  saveTodo() {
-    this.todos.push({ done: false, title: this.newTodo.title });
-    this.newTodo.title = '';
-    if (!this.keepModalOpen) {
-      this.addTodoModal.close();
-    }
+  saveTodo(todo: Todo) {
+    console.log('saveTodo', todo);
+    this.todos.push(todo);
   }
 }

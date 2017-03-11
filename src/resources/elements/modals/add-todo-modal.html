@@ -1,0 +1,19 @@
+<template>
+  <div md-modal md-modal.ref="modal">
+    <div class="modal-content">
+      <h4 i18n="todo.add">Add a todo</h4>
+      <form submit.delegate="saveTodo()">
+        <div>
+          <md-input md-auto-focus md-label="put some text here" md-value.bind="newTodo.title"></md-input>
+        </div>
+      </form>
+      <div>
+        <md-checkbox md-checked.bind="keepOpen">keep open</md-checkbox>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a click.delegate="saveTodo()" md-button="flat: true;" md-waves="color: primary;" class="modal-action primary-text">Add</a>
+      <a md-button="flat: true;" md-waves="color: primary;" class="modal-action modal-close">Cancel</a>
+    </div>
+  </div>
+</template>
