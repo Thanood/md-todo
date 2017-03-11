@@ -4,6 +4,7 @@ import { inject } from "aurelia-framework";
 
 @inject(Element)
 export class AddTodoModal {
+  input: Element;
   keepOpen = false;
   modal: MdModal;
   newTodo = {
@@ -12,6 +13,12 @@ export class AddTodoModal {
   }
 
   constructor(private element: Element) { }
+
+  onReady($event) {
+    const nativeInput = this.input.querySelector('input');
+    nativeInput.focus();
+    nativeInput.nextElementSibling.classList.add('active');
+  }
 
   open() {
     this.modal.open();

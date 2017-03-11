@@ -1,16 +1,13 @@
-import { AddTodoModal } from "./resources/elements/modals/add-todo-modal";
-import { Todo } from "./models/todo";
+import { RouterConfiguration, Router } from "aurelia-router";
 
 export class App {
-  addTodoModal: AddTodoModal;
-  todos: Todo[] = [];
-
-  addTodo() {
-    this.addTodoModal.open();
-  }
-
-  saveTodo(todo: Todo) {
-    console.log('saveTodo', todo);
-    this.todos.push(todo);
+  router: Router;
+  
+  configureRouter(config: RouterConfiguration, router: Router) {
+    this.router = router;
+    config.map([
+      { route: '', redirect: 'all' },
+      { route: 'all', name: 'all', moduleId: 'views/todo-list', title: 'all', nav: true }
+    ]);
   }
 }
