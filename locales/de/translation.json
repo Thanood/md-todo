@@ -2,6 +2,9 @@
   "app": {
     "title": "Aurelia MD-Todo"
   },
+  "nav": {
+    "all": "Alle"
+  },
   "todo": {
     "add": "Todo hinzufügen",
     "placeholder": "(de) Add a todo by clicking the '+' in the lower right corner."
