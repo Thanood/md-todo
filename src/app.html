@@ -1,12 +1,10 @@
 <template>
   <require from="./app.css"></require>
   <md-colors md-primary-color="#78909C" md-accent-color="#FF80AB"></md-colors>
-  <nav-bar i18n="[title]app-title"></nav-bar>
+  <nav-bar i18n="[title]app.title"></nav-bar>
 
   <div class="todo-list-placeholder valign-wrapper" show.bind="todos.length === 0">
-    <h2 class="valign">
-      Add a todo by clicking the "plus" in the lower right corner.
-    </h2>
+    <h2 class="valign" i18n="todo.placeholder"></h2>
   </div>
   <md-collection class="todo-list" show.bind="todos.length > 0">
     <md-collection-item repeat.for="todo of todos">
