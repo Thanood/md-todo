@@ -36,6 +36,6 @@ export function configure(aurelia: Aurelia) {
         debug : false
       });
     });
-
+  
   aurelia.start().then(() => aurelia.setRoot());
 }
