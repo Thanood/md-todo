@@ -1,3 +1,18 @@
 {
-  "app-title": "Aurelia MD-Todo"
+  "app": {
+    "title": "Aurelia MD-Todo"
+  },
+  "nav": {
+    "all": "Alle"
+  },
+  "todo": {
+    "add": "Todo hinzufügen",
+    "modal": {
+      "add": "hinzufügen",
+      "close": "schließen",
+      "inputLabel": "Todo hier rein",
+      "keepOpen": "geöffnet lassen"
+    },
+    "placeholder": "(de) Add a todo by clicking the '+' in the lower right corner."
+  }
 }
