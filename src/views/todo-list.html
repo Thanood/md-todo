@@ -10,10 +10,15 @@
   </md-collection>
 
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a click.delegate="addTodo()" md-button="floating: true; large: true;" md-tooltip="position: left; text: todo.add;" md-waves="color: light; circle: true;">
+    <a ref="tap" click.delegate="addTodo()" md-button="floating: true; large: true;" md-tooltip="position: left; text: todo.add;" md-waves="color: light; circle: true;">
       <i class="large material-icons">add</i>
     </a>
   </div>
+
+  <md-tap-target md-ref.bind="tap" view-model.ref="tapTarget">
+    <h5 class="white-text">Add a todo</h5>
+    <p class="white-text" i18n="todo.placeholder">xy</p>
+  </md-tap-target>
 
   <add-todo-modal todo-added.delegate="saveTodo($event.detail)" view-model.ref="addTodoModal"></add-todo-modal>
 </template>

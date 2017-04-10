@@ -32,6 +32,7 @@ require([
   'sideNav',
   'slider',
   'tabs',
+  'tapTarget',
   'toasts',
   'tooltip',
   'transitions',
