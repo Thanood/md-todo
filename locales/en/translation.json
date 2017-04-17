@@ -7,6 +7,7 @@
   },
   "todo": {
     "add": "Add a todo",
+    "edit": "Edit todo",
     "modal": {
       "add": "add",
       "close": "close",

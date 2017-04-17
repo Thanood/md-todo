@@ -23,12 +23,22 @@ export class TodoList {
     }
     const todos = this.storage.get('todos');
     if (todos) {
-      this.todos = todos;
+      this.todos = todos.map(t => {
+        if (typeof t.dueDate === 'string') {
+          t.dueDate = Date.parse(t.dueDate);
+        }
+        return t;
+      });
     }
   }
 
   addTodo() {
     this.addTodoModal.open();
+  }
+
+  finishEditTodo() {
+    this.storage.set('todos', this.todos);
+    this.bottomModal.close();
   }
 
   openBottomModal(todo) {
