@@ -12,7 +12,7 @@ export class TodoList {
 
   editTodo: Todo;
 
-  constructor(private storage: StorageService ,private taskQueue: TaskQueue) { }
+  constructor(private storage: StorageService, private taskQueue: TaskQueue) { }
 
   attached() {
     if (this.storage.get('tapTargetDisplayed') !== true) {
