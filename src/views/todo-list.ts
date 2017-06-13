@@ -46,6 +46,10 @@ export class TodoList {
     this.bottomModal.open();
   }
 
+  returnFalse() {
+    return false;
+  }
+
   saveTodo(todo: Todo) {
     console.log('saveTodo', todo);
     this.todos.push(todo);

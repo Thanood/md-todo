@@ -4,7 +4,7 @@
   </div>
   <md-collection class="todo-list" show.bind="todos.length > 0">
     <md-collection-item repeat.for="todo of todos" click.delegate="openBottomModal(todo)">
-      <md-checkbox md-checked.bind="todo.done"></md-checkbox>
+      <md-checkbox md-checked.bind="todo.done" click.delegate="returnFalse()"></md-checkbox>
       <span class="todo-title ${ todo.done ? 'done' : '' }">${todo.title}</span>
       <p>${todo.dueDate | date & signal:'aurelia-translation-signal'}</p>
     </md-collection-item>
